@@ -1,4 +1,4 @@
-# for part 1
+# for part 1 (accomplished first try)
 def find_solution1(arr):
    # clearly O(n^2), I wonder if there's a faster way
    for x in arr:
@@ -6,7 +6,7 @@ def find_solution1(arr):
          if x != y and x + y == 2020:
             return [x*y, x, y]
 
-# for part 2
+# for part 2 (accomplished first try)
 def find_solution2(arr):
    # clearly O(n^3), I wonder if there's a faster way
    for x in arr:

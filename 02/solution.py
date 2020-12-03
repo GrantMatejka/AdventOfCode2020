@@ -1,5 +1,5 @@
-
-def find_solution(arr):
+# (accomplished first try)
+def find_solution1(arr):
     total = 0
 
     for elem in arr:
@@ -14,7 +14,7 @@ def find_solution(arr):
             total += 1
     return total
 
-
+# (accomplished first try)
 def find_solution2(arr):
     total = 0
 
@@ -36,5 +36,5 @@ if __name__ == "__main__":
                     int(x.split('-')[1].split(' ')[0]), 
                     x.split('-')[1].split(' ')[1][0], 
                     x.split('-')[1].split(' ')[2]] for x in open("input.txt", "r").read().splitlines()]
-   print(find_solution(input_list))
+   print(find_solution1(input_list))
    print(find_solution2(input_list))
